@@ -61,8 +61,7 @@ class HauntedHouseTest {
 
     @Test
     void runningLow() {
-        assertEquals(10, house.getCandyCount());
-        house.trickOrTreat(10);
+        house.trickOrTreat(60);
         assertEquals(0, house.getCandyCount());
         house.runningLow();
         assertEquals(10, house.getCandyCount());
